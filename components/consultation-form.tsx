@@ -1,0 +1,126 @@
+"use client"
+
+import type React from "react"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Checkbox } from "@/components/ui/checkbox"
+import { motion } from "framer-motion"
+import { CheckCircle } from "lucide-react"
+import Link from "next/link"
+
+export default function ConsultationForm() {
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [privacyAccepted, setPrivacyAccepted] = useState(false)
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+  const [formError, setFormError] = useState("")
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    // Validate form
+    if (!privacyAccepted) {
+      setFormError("Please accept the privacy policy to continue.")
+      return
+    }
+
+    setFormError("")
+    setIsSubmitting(true)
+
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false)
+      setIsSubmitted(true)
+    }, 1500)
+  }
+
+  return (
+    <div id="free-consultation" className="w-full max-w-md mx-auto">
+      {!isSubmitted ? (
+        <motion.form
+          onSubmit={handleSubmit}
+          className="space-y-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div>
+            <Input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <Input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <Textarea
+              name="message"
+              placeholder="What would you like to discuss?"
+              rows={4}
+              required
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="flex items-start space-x-2">
+            <Checkbox
+              id="privacy"
+              checked={privacyAccepted}
+              onCheckedChange={(checked) => setPrivacyAccepted(checked as boolean)}
+              className="mt-1"
+            />
+            <label htmlFor="privacy" className="text-sm text-muted-foreground leading-tight cursor-pointer">
+              I agree to the processing of my data as outlined in the{" "}
+              <Link href="/imprint" className="text-primary hover:underline">
+                privacy policy
+              </Link>
+              .
+            </label>
+          </div>
+
+          {formError && <p className="text-sm text-red-500">{formError}</p>}
+
+          <Button type="submit" className="w-full gradient-bg" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send a message"}
+          </Button>
+        </motion.form>
+      ) : (
+        <motion.div
+          className="text-center py-8"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <CheckCircle className="w-16 h-16 mx-auto text-green-500 mb-4" />
+          <h3 className="text-xl font-bold mb-2">Thanks for reaching out!</h3>
+          <p className="text-muted-foreground">I'll get back to you shortly to schedule our 30-minute consultation.</p>
+        </motion.div>
+      )}
+    </div>
+  )
+}
