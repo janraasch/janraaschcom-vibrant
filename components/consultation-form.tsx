@@ -27,7 +27,7 @@ export default function ConsultationForm() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
     // Validate form
@@ -39,11 +39,26 @@ export default function ConsultationForm() {
     setFormError("")
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "consultation",
+          ...formData,
+        }).toString(),
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        setFormError("Something went wrong. Please try again.")
+      }
+    } catch (error) {
+      setFormError("Something went wrong. Please try again.")
+    } finally {
       setIsSubmitting(false)
-      setIsSubmitted(true)
-    }, 1500)
+    }
   }
 
   return (
@@ -55,7 +70,11 @@ export default function ConsultationForm() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
+          data-netlify="true"
+          name="contact"
+          method="POST"
         >
+          <input type="hidden" name="form-name" value="consultation" />
           <div>
             <Input
               type="text"
@@ -119,7 +138,7 @@ export default function ConsultationForm() {
         >
           <CheckCircle className="w-16 h-16 mx-auto text-green-500 mb-4" />
           <h3 className="text-xl font-bold mb-2">Thanks for reaching out!</h3>
-          <p className="text-muted-foreground">I'll get back to you shortly to schedule our 30-minute consultation.</p>
+          <p className="text-muted-foreground">I'll be in touch.</p>
         </MotionDiv>
       )}
     </div>
