@@ -45,7 +45,7 @@ export default function ConsultationForm() {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
-          "form-name": "consultation",
+          "form-name": "contact",
           ...formData,
         }).toString(),
       })
