@@ -124,11 +124,11 @@ export default function ConsultationForm() {
               checked={privacyAccepted}
               required
               onCheckedChange={(checked) => setPrivacyAccepted(checked as boolean)}
-              className="mt-1"
+              className="mt-1.5"
             />
             <label htmlFor="privacy" className="text-sm text-muted-foreground leading-tight cursor-pointer">
-              I agree to the processing of my data as outlined in the{" "}
-              <Link href="/imprint" className="text-primary hover:underline">
+              I consent to my data being processed as described in the{" "}
+              <Link href="/imprint" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 privacy policy
               </Link>
               .
