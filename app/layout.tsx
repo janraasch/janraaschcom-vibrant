@@ -16,8 +16,65 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Jan Raasch | Full-Stack Developer & Consultant",
   description:
-    "Full-stack developer passionate about creating digital products prioritizing impactful, serene, and human-centric experiences.",
-    generator: 'v0.dev'
+    "Jan Raasch. Hello! I'm Jan, a full-stack developer passionate about creating digital products prioritizing impactful, serene, and human-centric experiences. I have been working as a professional software developer for over 13 years. In a previous life, over 13 years ago, I used to be a mathematician. If you want to learn more about my services and how we can work together, reach out!",
+  generator: 'v0.dev',
+  keywords: [
+    "Full-Stack Developer",
+    "Consultant",
+    "Software Engineer",
+    "Web Developer",
+    "Mobile Developer",
+    "Full-Stack Development",
+    "Digital Product Development",
+    "Impactful Experiences",
+    "Human-Centric",
+    "Consulting",
+    "Software Development",
+    "Web Development",
+    "Mobile Development",
+    "Jan Raasch"
+  ],
+  authors: [{ name: "Jan Raasch" }],
+  creator: "Jan Raasch",
+  publisher: "Jan Raasch",
+  metadataBase: new URL("https://www.janraasch.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Jan Raasch, full-stack developer & consultant",
+    description:
+      "Hello! I'm Jan, a full-stack developer passionate about creating digital products prioritizing impactful, serene, and human-centric experiences. I have been working as a professional software developer for over 13 years. In a previous life, over 13 years ago, I used to be a mathematician. If you want to learn more about my services and how we can work together, reach out!",
+    url: "https://www.janraasch.com",
+    siteName: "Jan Raasch | Full-Stack Developer & Consultant",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: 'https://www.janraasch.com/images/og-image-home-available-for-new-projects.jpg', // Must be an absolute URL
+        width: 1200,
+        height: 630,
+        alt: 'Jan Raasch | Full-Stack Developer & Consultant'
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jan Raasch | Full-Stack Developer & Consultant",
+    description:
+      "Hello! I'm Jan, a full-stack developer passionate about creating digital products prioritizing impactful, serene, and human-centric experiences. I have been working as a professional software developer for over 13 years. In a previous life, over 13 years ago, I used to be a mathematician. If you want to learn more about my services and how we can work together, reach out!",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function RootLayout({
