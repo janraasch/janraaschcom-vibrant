@@ -1,12 +1,9 @@
-"use client"
-
 import { MotionDiv } from "@/components/use-client-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Calendar } from "lucide-react"
 import Link from "next/link"
 import ConsultationForm from "@/components/consultation-form"
-import { useState } from "react"
 
 interface CTASectionProps {
   headline?: string
@@ -17,8 +14,6 @@ export default function CTASection({
   headline = "Let's Work Together",
   description = "I'm excited to hear about your project! Please select your preferred way to connect.",
 }: CTASectionProps) {
-  const [activeTab, setActiveTab] = useState<"email" | "calendar" | null>(null)
-
   return (
     <section id="contact" className="py-16 md:py-24 relative">
       <div className="container px-4 md:px-6">
@@ -41,7 +36,7 @@ export default function CTASection({
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full cursor-pointer transition-all" onClick={() => setActiveTab("email")}>
+              <Card className="h-full transition-all">
                 <CardHeader className="text-center">
                   <div className="w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900/20 flex items-center justify-center mx-auto mb-4">
                     <Mail className="h-6 w-6 text-yellow-500" />
@@ -50,7 +45,7 @@ export default function CTASection({
                   <CardDescription>Reach out directly to my inbox</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="cursor-pointer">
                     <Link href="mailto:jan@janraasch.com">Email Me</Link>
                   </Button>
                 </CardContent>
@@ -63,7 +58,7 @@ export default function CTASection({
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full cursor-pointer transition-all" onClick={() => setActiveTab("calendar")}>
+              <Card className="h-full transition-all">
                 <CardHeader className="text-center">
                   <div className="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/20 flex items-center justify-center mx-auto mb-4">
                     <Calendar className="h-6 w-6 text-purple-500" />
@@ -72,7 +67,7 @@ export default function CTASection({
                   <CardDescription>Schedule a video call with me</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="cursor-pointer">
                     <Link href="https://calendly.com/jan-raasch/office-hours" target="_blank" rel="noopener noreferrer">
                       Book a Call
                     </Link>
