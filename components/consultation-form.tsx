@@ -138,7 +138,6 @@ export default function ConsultationForm() {
         >
           <CheckCircle className="w-16 h-16 mx-auto text-green-500 mb-4" />
           <h3 className="text-xl font-bold mb-2">Thanks for reaching out!</h3>
-          <p className="text-muted-foreground">I'll be in touch.</p>
         </MotionDiv>
       )}
     </div>
