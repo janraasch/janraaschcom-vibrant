@@ -11,7 +11,7 @@ export default function ProfileImage() {
     >
       <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl transition-all duration-500 group hover:scale-105 hover:rotate-3 hover:shadow-2xl">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jan-raasch-profile-v1.jpg-XvNtnm732PVovc6skMJHvzUul4RvB9.jpeg"
+          src="/images/jan-raasch.jpeg"
           alt="Jan Raasch"
           fill
           className="object-cover transition-all duration-500 group-hover:scale-110"

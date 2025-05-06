@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { MotionDiv } from "@/components/use-client-motion"
 
 export default function MemeSection() {
@@ -13,11 +14,14 @@ export default function MemeSection() {
           >
             <h3 className="text-xl font-bold mb-4">When the code finally works after hours of debugging</h3>
             <div className="rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="/images/celebrating-code-cat.png"
-                alt="Excited cat with raised paws celebrating code success"
-                className="w-full"
-              />
+              <div className="relative w-full aspect-video">
+                <Image
+                  src="/images/celebrating-code-cat.jpg"
+                  alt="Excited cat with raised paws celebrating code success"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </MotionDiv>
         </div>
