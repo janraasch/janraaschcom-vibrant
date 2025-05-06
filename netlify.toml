@@ -1,0 +1,68 @@
+[build]
+  publish = ".next"
+  command = "npm run build"
+
+# Redirects and headers are GLOBAL for all builds – they do not get scoped to
+# contexts no matter where you define them in the file.
+# For context-specific rules, use _headers or _redirects files, which are
+# PER-DEPLOY.
+
+[[redirects]]
+  from = "http://janraasch.netlify.com/*"
+  to = "http://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from = "https://janraasch.netlify.com/*"
+  to = "https://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="http://www.janraasch.de/*"
+  to="http://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="https://www.janraasch.de/*"
+  to="https://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="http://janraasch.de/*"
+  to="http://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="https://janraasch.de/*"
+  to="https://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="https://www.janraasch.com/bubble-tea-in-jena.html"
+  to="https://www.janraasch.com"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="https://www.janraasch.com/thurmensa/*"
+  to="https://www.janraasch.com/:splat"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="https://www.janraasch.com/software/"
+  to="https://www.janraasch.com"
+  force = true
+  status = 301
+
+[[redirects]]
+  from="https://www.janraasch.com/resume/"
+  to="https://www.janraasch.com"
+  force = true
+  status = 301

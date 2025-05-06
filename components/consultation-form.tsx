@@ -41,7 +41,7 @@ export default function ConsultationForm() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
@@ -71,8 +71,6 @@ export default function ConsultationForm() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          data-netlify="true"
-          data-netlify-honeypot="surname"
           name="contact"
           method="POST"
         >
