@@ -72,7 +72,7 @@ export default function Navbar() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <Button asChild className="gradient-bg">
-              <Link href="mailto:jan@janraasch.com">Get in Touch</Link>
+              <Link href="#contact">Get in Touch</Link>
             </Button>
           </MotionDiv>
           <MotionDiv
