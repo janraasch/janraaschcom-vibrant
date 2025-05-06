@@ -19,6 +19,7 @@ export default function ConsultationForm() {
     name: "",
     email: "",
     message: "",
+    surname: "",
   })
   const [formError, setFormError] = useState("")
 
@@ -71,10 +72,21 @@ export default function ConsultationForm() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           data-netlify="true"
+          data-netlify-honeypot="surname"
           name="contact"
           method="POST"
         >
           <input type="hidden" name="form-name" value="consultation" />
+          <div className="hidden">
+            <Input
+              type="text"
+              name="surname"
+              tabIndex={-1}
+              autoComplete="off"
+              value={formData.surname}
+              onChange={handleChange}
+            />
+          </div>
           <div>
             <Input
               type="text"
