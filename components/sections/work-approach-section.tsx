@@ -1,13 +1,11 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 
 export default function WorkApproachSection() {
   return (
     <section id="work-style" className="py-16 md:py-24 bg-background relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -20,9 +18,9 @@ export default function WorkApproachSection() {
               ready to engage in valuable synchronous discussions when needed and enjoy participating in kick-off
               workshops or team meetings in person when possible.
             </p>
-          </motion.div>
+          </MotionDiv>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -36,7 +34,7 @@ export default function WorkApproachSection() {
               me to accommodate various project scales and client needs, ensuring I can provide the right level of
               attention and expertise to each engagement.
             </p>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

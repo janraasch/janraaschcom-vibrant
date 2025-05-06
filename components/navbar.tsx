@@ -5,7 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 import { Menu, X } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
+import { AnimatePresence } from "framer-motion"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,13 +33,13 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <MotionDiv initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <span className="text-2xl font-bold gradient-text font-heading">janraasch.com</span>
-          </motion.div>
+          </MotionDiv>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -46,8 +47,8 @@ export default function Navbar() {
             <Link href="/" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
               Home
             </Link>
-          </motion.div>
-          <motion.div
+          </MotionDiv>
+          <MotionDiv
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -55,8 +56,8 @@ export default function Navbar() {
             <Link href="/now" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
               Now
             </Link>
-          </motion.div>
-          <motion.div
+          </MotionDiv>
+          <MotionDiv
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -64,8 +65,8 @@ export default function Navbar() {
             <Link href="/hire-me" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
               Hire Me
             </Link>
-          </motion.div>
-          <motion.div
+          </MotionDiv>
+          <MotionDiv
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -73,14 +74,14 @@ export default function Navbar() {
             <Button asChild className="gradient-bg">
               <Link href="mailto:jan@janraasch.com">Get in Touch</Link>
             </Button>
-          </motion.div>
-          <motion.div
+          </MotionDiv>
+          <MotionDiv
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <ModeToggle />
-          </motion.div>
+          </MotionDiv>
         </div>
 
         <div className="md:hidden flex items-center gap-4">
@@ -93,7 +94,7 @@ export default function Navbar() {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -128,7 +129,7 @@ export default function Navbar() {
                 </Link>
               </Button>
             </div>
-          </motion.div>
+          </MotionDiv>
         )}
       </AnimatePresence>
     </header>

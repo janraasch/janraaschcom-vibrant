@@ -1,6 +1,4 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import TechStack from "@/components/tech-stack"
 
 export default function TechStackSection() {
@@ -8,7 +6,7 @@ export default function TechStackSection() {
     <section className="py-16 md:py-24 relative">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-10">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -18,7 +16,7 @@ export default function TechStackSection() {
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Technologies I've worked with to help my clients achieve their vision.
             </p>
-          </motion.div>
+          </MotionDiv>
         </div>
         <TechStack
           technologies={[

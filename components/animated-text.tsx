@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { MotionDiv, MotionSpan } from "@/components/use-client-motion"
 
 interface AnimatedTextProps {
   text: string
@@ -41,7 +41,7 @@ export default function AnimatedText({ text, className = "", once = false }: Ani
   }
 
   return (
-    <motion.div
+    <MotionDiv
       className={`overflow-hidden flex flex-wrap ${className}`}
       variants={container}
       initial="hidden"
@@ -49,10 +49,10 @@ export default function AnimatedText({ text, className = "", once = false }: Ani
       viewport={{ once }}
     >
       {words.map((word, index) => (
-        <motion.span key={index} className="mr-1.5" variants={child}>
+        <MotionSpan key={index} className="mr-1.5" variants={child}>
           {word}
-        </motion.span>
+        </MotionSpan>
       ))}
-    </motion.div>
+    </MotionDiv>
   )
 }

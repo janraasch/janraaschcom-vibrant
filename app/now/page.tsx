@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Calendar, MapPin } from "lucide-react"
 import GeometricShapes from "@/components/geometric-shapes"
 import AnimatedText from "@/components/animated-text"
@@ -15,17 +15,17 @@ export default function NowPage() {
       <section className="relative pt-16 md:pt-24 pb-16">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight font-heading mb-4">
                 <span className="gradient-text text-glow">Now</span>
               </h1>
-            </motion.div>
+            </MotionDiv>
             <AnimatedText
               text="What I'm focused on at this moment in time."
               className="text-xl md:text-2xl font-medium"
               once
             />
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
@@ -33,7 +33,7 @@ export default function NowPage() {
             >
               <Calendar className="h-4 w-4" />
               <span>Last updated: April 29, 2025</span>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function NowPage() {
       <section className="py-8 md:py-16 relative">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -62,11 +62,11 @@ export default function NowPage() {
               <div className="animate-bounce-slow inline-block">
                 <span className="text-xl">👋</span>
               </div>
-            </motion.div>
+            </MotionDiv>
 
             <div className="space-y-12">
               {/* Freelance Work Section */}
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -78,10 +78,10 @@ export default function NowPage() {
                   want to explore possibilities, let's chat - you can book a free 30-min call, check out my previous
                   work on the hire me page or send me an email to get in touch.
                 </p>
-              </motion.div>
+              </MotionDiv>
 
               {/* Open Source Projects Section */}
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
@@ -93,10 +93,10 @@ export default function NowPage() {
                   A social feed for you and your close friends. In web arithmetic it is the sum of FriendFeed, Bear Blog
                   & v0. Currently building this with v0.
                 </p>
-              </motion.div>
+              </MotionDiv>
 
               {/* AI Explorations Section */}
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -108,10 +108,10 @@ export default function NowPage() {
                   process of building a new version of janraasch.com & isabellmartins.com (my girlfriend's website)
                   using v0.
                 </p>
-              </motion.div>
+              </MotionDiv>
 
               {/* Reading Section */}
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -121,10 +121,10 @@ export default function NowPage() {
                 <p className="text-muted-foreground text-lg">
                   Always :). Next up: Tidy First by Kent Beck - Empirical Software Design.
                 </p>
-              </motion.div>
+              </MotionDiv>
 
               {/* Yoga Section */}
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -135,16 +135,16 @@ export default function NowPage() {
                   Since I have to cut down on bouldering because of an injury I am focussing a lot more on Yoga. I
                   practice daily, often following along with Adriene Mishler, Tim Senesi or Saturno Movement.
                 </p>
-              </motion.div>
+              </MotionDiv>
             </div>
-
-            <CTASection
-              headline="Let's Connect"
-              description="Want to know more about what I'm up to or discuss a potential collaboration?"
-            />
           </div>
         </div>
       </section>
+      {/* <FunClosingSection /> */}
+      <CTASection
+        headline="Let's Connect"
+        description="Want to know more about what I'm up to or discuss a potential collaboration?"
+      />
     </div>
   )
 }

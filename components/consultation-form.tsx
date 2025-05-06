@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
-import { motion } from "framer-motion"
+import { MotionDiv, MotionForm } from "@/components/use-client-motion"
 import { CheckCircle } from "lucide-react"
 import Link from "next/link"
 
@@ -49,7 +49,7 @@ export default function ConsultationForm() {
   return (
     <div id="free-consultation" className="w-full max-w-md mx-auto">
       {!isSubmitted ? (
-        <motion.form
+        <MotionForm
           onSubmit={handleSubmit}
           className="space-y-4"
           initial={{ opacity: 0 }}
@@ -108,9 +108,9 @@ export default function ConsultationForm() {
           <Button type="submit" className="w-full gradient-bg" disabled={isSubmitting}>
             {isSubmitting ? "Sending..." : "Send a message"}
           </Button>
-        </motion.form>
+        </MotionForm>
       ) : (
-        <motion.div
+        <MotionDiv
           className="text-center py-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -119,7 +119,7 @@ export default function ConsultationForm() {
           <CheckCircle className="w-16 h-16 mx-auto text-green-500 mb-4" />
           <h3 className="text-xl font-bold mb-2">Thanks for reaching out!</h3>
           <p className="text-muted-foreground">I'll get back to you shortly to schedule our 30-minute consultation.</p>
-        </motion.div>
+        </MotionDiv>
       )}
     </div>
   )

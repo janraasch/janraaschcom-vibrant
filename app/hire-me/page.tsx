@@ -1,5 +1,3 @@
-"use client"
-
 import GeometricShapes from "@/components/geometric-shapes"
 import HireMeHeroSection from "@/components/sections/hire-me-hero-section"
 import IntroSection from "@/components/sections/intro-section"

@@ -1,14 +1,12 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { SpaceIcon as Yoga, Code } from "lucide-react"
 
 export default function FunClosingSection() {
   return (
-    <section className="py-16 md:py-20 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-muted/50 relative geometric-bg relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -16,10 +14,10 @@ export default function FunClosingSection() {
             className="mb-8"
           >
             <h3 className="text-2xl font-bold tracking-tight font-heading mb-4">My Secret Formula</h3>
-          </motion.div>
+          </MotionDiv>
 
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 py-6">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -30,9 +28,9 @@ export default function FunClosingSection() {
                 <Yoga className="h-8 w-8 text-purple-500" />
               </div>
               <span className="text-sm font-medium">Yoga & Meditation</span>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -40,9 +38,9 @@ export default function FunClosingSection() {
               className="text-4xl font-light text-muted-foreground"
             >
               +
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -69,9 +67,9 @@ export default function FunClosingSection() {
                 </svg>
               </div>
               <span className="text-sm font-medium">Tea</span>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -79,9 +77,9 @@ export default function FunClosingSection() {
               className="text-4xl font-light text-muted-foreground"
             >
               =
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -92,10 +90,10 @@ export default function FunClosingSection() {
                 <Code className="h-8 w-8 text-white" />
               </div>
               <span className="text-sm font-medium">Great Code</span>
-            </motion.div>
+            </MotionDiv>
           </div>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -105,7 +103,7 @@ export default function FunClosingSection() {
             <p className="text-lg text-muted-foreground">
               To be completely honest, these days it's tea, yoga & meditation more than coffee that's the fuel :)
             </p>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

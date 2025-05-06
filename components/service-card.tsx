@@ -1,6 +1,4 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import type { LucideIcon } from "lucide-react"
 
@@ -13,7 +11,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, icon: Icon, delay = 0 }: ServiceCardProps) {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: delay * 0.2, duration: 0.5 }}
@@ -30,6 +28,6 @@ export default function ServiceCard({ title, description, icon: Icon, delay = 0 
           <CardDescription className="text-base">{description}</CardDescription>
         </CardContent>
       </Card>
-    </motion.div>
+    </MotionDiv>
   )
 }

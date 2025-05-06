@@ -1,6 +1,4 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Code, Unplug, Users, Target, Lightbulb, Rocket } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 
@@ -9,7 +7,7 @@ export default function ServicesSection() {
     <section id="services" className="py-16 md:py-24 bg-muted/50 relative geometric-bg">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-10">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -20,7 +18,7 @@ export default function ServicesSection() {
               From working with founders to build their first MVPs to delivering high-priority features for larger
               companies, I've successfully contributed to a diverse range of projects.
             </p>
-          </motion.div>
+          </MotionDiv>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard

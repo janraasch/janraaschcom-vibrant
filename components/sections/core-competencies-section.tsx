@@ -1,8 +1,6 @@
-"use client"
-
 import type React from "react"
 
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Server, Code, GitGraphIcon as GraphQl, Zap, Sparkles, Rocket } from "lucide-react"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -31,7 +29,7 @@ function CompetencyCard({ title, description, icon: Icon, delay = 0, link }: Com
   )
 
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: delay * 0.1, duration: 0.5 }}
@@ -39,7 +37,7 @@ function CompetencyCard({ title, description, icon: Icon, delay = 0, link }: Com
       className="h-full"
     >
       {link ? <Link href={link}>{cardContent}</Link> : cardContent}
-    </motion.div>
+    </MotionDiv>
   )
 }
 
@@ -48,7 +46,7 @@ export default function CoreCompetenciesSection() {
     <section id="skills" className="py-16 md:py-24 bg-muted/50 relative geometric-bg">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -60,7 +58,7 @@ export default function CoreCompetenciesSection() {
               My technical expertise spans a wide range of technologies and approaches, allowing me to tackle diverse
               challenges.
             </p>
-          </motion.div>
+          </MotionDiv>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <CompetencyCard

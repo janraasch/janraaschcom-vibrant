@@ -1,13 +1,11 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 
 export default function IntroSection() {
   return (
     <section id="intro" className="py-16 md:py-24 relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -26,9 +24,9 @@ export default function IntroSection() {
                 requirements into technical solutions.
               </p>
             </div>
-          </motion.div>
+          </MotionDiv>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -40,7 +38,7 @@ export default function IntroSection() {
               efficiently. I'm a strong advocate for functional programming and believe in building small prototypes to
               test ideas early in the development process.
             </p>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

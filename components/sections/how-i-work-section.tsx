@@ -1,6 +1,4 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { MessageSquare, Code, CheckCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -9,7 +7,7 @@ export default function HowIWorkSection() {
     <section className="py-16 md:py-24 relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -21,10 +19,10 @@ export default function HowIWorkSection() {
               My approach is centered around understanding your needs and delivering high-quality solutions that exceed
               expectations.
             </p>
-          </motion.div>
+          </MotionDiv>
 
           <div className="space-y-8">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -46,9 +44,9 @@ export default function HowIWorkSection() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -70,9 +68,9 @@ export default function HowIWorkSection() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -94,7 +92,7 @@ export default function HowIWorkSection() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </div>

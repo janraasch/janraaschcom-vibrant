@@ -1,6 +1,4 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Clock, MessageSquare, Laptop } from "lucide-react"
 
 export default function WorkingStyleSection() {
@@ -8,7 +6,7 @@ export default function WorkingStyleSection() {
     <section className="py-16 bg-background relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -21,10 +19,10 @@ export default function WorkingStyleSection() {
               ready to engage in valuable synchronous discussions when needed and enjoy participating in kick-off
               workshops or team meetings in person when possible.
             </p>
-          </motion.div>
+          </MotionDiv>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -38,9 +36,9 @@ export default function WorkingStyleSection() {
               <p className="text-muted-foreground">
                 I structure my day around focused work blocks to maximize productivity and creative problem-solving.
               </p>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -54,9 +52,9 @@ export default function WorkingStyleSection() {
               <p className="text-muted-foreground">
                 I value thoughtful, well-documented communication that respects everyone's time and priorities.
               </p>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -71,10 +69,10 @@ export default function WorkingStyleSection() {
                 While I thrive in asynchronous environments, I'm always available for real-time collaboration when it
                 adds value.
               </p>
-            </motion.div>
+            </MotionDiv>
           </div>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -86,7 +84,7 @@ export default function WorkingStyleSection() {
               has to be debugged, code that has to be read and understood, code that has to be supported."
             </p>
             <p className="mt-2 text-muted-foreground">— Jeff Atwood</p>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

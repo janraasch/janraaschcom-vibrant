@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Code, Coffee, Lightbulb } from "lucide-react"
 
 export default function FunDividerSection() {
@@ -8,7 +8,7 @@ export default function FunDividerSection() {
     <section className="py-16 bg-background relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -17,10 +17,10 @@ export default function FunDividerSection() {
           >
             <h3 className="text-2xl font-bold tracking-tight font-heading mb-4">How I Work</h3>
             <p className="text-muted-foreground text-lg">Turning coffee into code since 2010</p>
-          </motion.div>
+          </MotionDiv>
 
           <div className="flex justify-center items-center gap-8 md:gap-16 py-6">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -31,9 +31,9 @@ export default function FunDividerSection() {
                 <Coffee className="h-8 w-8 text-white" />
               </div>
               <span className="text-sm font-medium">Fuel</span>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -41,9 +41,9 @@ export default function FunDividerSection() {
               className="text-4xl font-light text-muted-foreground"
             >
               +
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -54,9 +54,9 @@ export default function FunDividerSection() {
                 <Lightbulb className="h-8 w-8 text-white" />
               </div>
               <span className="text-sm font-medium">Ideas</span>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -64,9 +64,9 @@ export default function FunDividerSection() {
               className="text-4xl font-light text-muted-foreground"
             >
               =
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -77,10 +77,10 @@ export default function FunDividerSection() {
                 <Code className="h-8 w-8 text-white" />
               </div>
               <span className="text-sm font-medium">Solutions</span>
-            </motion.div>
+            </MotionDiv>
           </div>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -92,7 +92,7 @@ export default function FunDividerSection() {
               has to be debugged, code that has to be read and understood, code that has to be supported."
             </p>
             <p className="mt-2 text-muted-foreground">— Jeff Atwood</p>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

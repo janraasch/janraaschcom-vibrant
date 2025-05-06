@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Calendar } from "lucide-react"
@@ -23,7 +23,7 @@ export default function CTASection({
     <section id="contact" className="py-16 md:py-24 relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -32,10 +32,10 @@ export default function CTASection({
           >
             <h2 className="text-3xl font-bold tracking-tight font-heading mb-4">{headline}</h2>
             <p className="text-muted-foreground text-lg">{description}</p>
-          </motion.div>
+          </MotionDiv>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 max-w-2xl mx-auto">
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -55,9 +55,9 @@ export default function CTASection({
                   </Button>
                 </CardContent>
               </Card>
-            </motion.div>
+            </MotionDiv>
 
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -79,10 +79,10 @@ export default function CTASection({
                   </Button>
                 </CardContent>
               </Card>
-            </motion.div>
+            </MotionDiv>
           </div>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -98,7 +98,7 @@ export default function CTASection({
             <div id="free-consultation">
               <ConsultationForm />
             </div>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>

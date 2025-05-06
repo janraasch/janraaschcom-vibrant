@@ -1,13 +1,11 @@
-"use client"
-
-import { motion } from "framer-motion"
+import { MotionDiv } from "@/components/use-client-motion"
 
 export default function MemeSection() {
   return (
     <section className="py-8 md:py-12 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -21,7 +19,7 @@ export default function MemeSection() {
                 className="w-full"
               />
             </div>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>
