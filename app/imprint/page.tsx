@@ -7,15 +7,6 @@ export default function ImprintPage() {
     <div className="relative">
       <div className="container px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-8">
-            <Button asChild variant="outline" size="sm">
-              <Link href="/" className="flex items-center gap-2">
-                <ArrowLeft className="h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-
           <div className="space-y-8">
             <div>
               <h1 className="text-3xl font-bold tracking-tight font-heading mb-6">Legal Notice & Privacy Policy</h1>
