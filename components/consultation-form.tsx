@@ -91,6 +91,7 @@ export default function ConsultationForm() {
             <Checkbox
               id="privacy"
               checked={privacyAccepted}
+              required
               onCheckedChange={(checked) => setPrivacyAccepted(checked as boolean)}
               className="mt-1"
             />
