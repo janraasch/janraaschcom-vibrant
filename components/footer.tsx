@@ -49,9 +49,9 @@ export default function Footer() {
             </Link>
           </div>
           <Button asChild variant="outline" className="animate-pulse-slow">
-            <Link href="#free-consultation">
+            <Link href="https://calendly.com/jan-raasch/office-hours" target="_blank" rel="noopener noreferrer">
               <Calendar className="h-4 w-4 mr-2" />
-              Schedule a 30min 1-on-1 now
+              Schedule 30min 1-on-1
             </Link>
           </Button>
         </div>

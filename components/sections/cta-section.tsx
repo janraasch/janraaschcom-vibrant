@@ -73,7 +73,7 @@ export default function CTASection({
                 </CardHeader>
                 <CardContent className="text-center">
                   <Button asChild variant="outline">
-                    <Link href="https://calendly.com/janraasch/30min" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://calendly.com/jan-raasch/office-hours" target="_blank" rel="noopener noreferrer">
                       Book a Call
                     </Link>
                   </Button>
