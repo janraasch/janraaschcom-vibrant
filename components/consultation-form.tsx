@@ -56,6 +56,7 @@ export default function ConsultationForm() {
         setFormError("Something went wrong. Please try again.")
       }
     } catch (error) {
+      console.error(error)
       setFormError("Something went wrong. Please try again.")
     } finally {
       setIsSubmitting(false)
