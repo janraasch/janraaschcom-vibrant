@@ -121,7 +121,7 @@ export default function NowPage() {
                   I'm thoroughly enjoying the process of exploring a range of AI tools, including <Link href="https://cursor.sh" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Cursor</Link>, <Link href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">v0</Link>, and <Link href="https://claude.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Claude AI</Link>. 
                 </p>
                 <p className="text-muted-foreground text-lg">
-                  This site is a product of my experiments with <Link href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">v0</Link>, and I'm also working on a new version of <Link href="https://isabellmartins.de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">isabellmartins.de</Link> (my fiancée's website) using the same technology. It's been both fun and insightful to see what these tools can help you build!
+                  This site is a product of my experiments with <Link href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">v0</Link>, and I've recently released a new version of <Link href="https://www.isabellmartins.de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.isabellmartins.de</Link> (my fiancée's website) built with the same technology. It's been both fun and insightful to see what these tools can do!
                 </p>
               </MotionDiv>
 
@@ -134,7 +134,7 @@ export default function NowPage() {
               >
                 <h2 className="text-2xl font-bold tracking-tight font-heading mb-4">Reading</h2>
                 <p className="text-muted-foreground text-lg">
-                  Next up: <Link href="https://www.oreilly.com/library/view/tidy-first/9781098151232" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Tidy First?</Link> by Kent Beck.
+                  Next up: <Link href="https://www.oreilly.com/library/view/tidy-first/9781098151232" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Tidy First?</Link> by Kent Beck. His talk on <Link href="https://events.zoom.us/ev/AoBzBRhcVMMq4J3MKjDkLjKXiYznxXar-HuG7ZR1B0HClF3DRAcL~AoVa6EvJ3UVK8t3V_A6F2wHac2fZueGMdfvHz7XEuHcGevPQekb6RavBRQ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Empirical Software Design: When & Why</Link> (Spoiler alert: make design decisions later and in small, safe steps :)) really sparked my interest. If you're interested, check out the recording of the talk.
                 </p>
               </MotionDiv>
 
@@ -147,7 +147,7 @@ export default function NowPage() {
               >
                 <h2 className="text-2xl font-bold tracking-tight font-heading mb-4">Yoga</h2>
                 <p className="text-muted-foreground text-lg">
-                  While recovering from a shoulder injury (no bouldering for now), I've deepened my yoga practice. 
+                  While recovering from a shoulder injury (no bouldering for me for now...), I've deepened my yoga practice. 
                   I practice daily, often following along with <Link href="https://yogawithadriene.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Adriene Mishler</Link>,{" "}
                   <Link href="https://www.timsenesiyoga.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Tim Senesi</Link>,{" "}
                   or <Link href="https://saturnomovement.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Gabo Saturno</Link>.
