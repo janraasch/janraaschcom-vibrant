@@ -49,19 +49,21 @@ export default function NowPage() {
               className="mb-12 p-6 border rounded-lg bg-card"
             >
               <div className="text-primary mb-4">
-                <Link href="https://omr.com/en/events/festival/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Link href="https://www.elixirconf.eu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  <span className="font-medium">#OMR25 Festival, Hamburg</span>
+                  <span className="font-medium">ElixirConf EU, Virtual</span>
                 </Link>
               </div>
-              <h2 className="text-2xl font-bold mb-4">Attending #OMR25 Festival</h2>
+              <h2 className="text-2xl font-bold mb-4">Attending ElixirConf EU</h2>
               <p className="text-muted-foreground mb-4">
                 Find me at{" "}
-                <Link href="https://omr.com/en/events/festival/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  Online Marketing Rockstars 2025
+                <Link href="https://www.elixirconf.eu/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  ElixirConf EU
                 </Link>{" "}
-                in Hamburg! If you're also attending, I'd love to connect and chat about ai, software development, and
-                potential collaborations.
+                in the chat! I'm looking forward to learning about the latest developments in the Elixir ecosystem and connecting with fellow Elixir enthusiasts.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                If you're also attending, I'd love to connect and chat about Elixir, Functional Programming, Types, AI, and potential collaborations.
               </p>
               <div className="animate-bounce-slow inline-block">
                 <span className="text-xl">👋</span>
