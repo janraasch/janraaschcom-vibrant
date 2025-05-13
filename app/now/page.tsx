@@ -31,7 +31,7 @@ export default function NowPage() {
               className="flex items-center justify-center gap-2 mt-4 text-muted-foreground"
             >
               <Calendar className="h-4 w-4 hidden sm:inline" />
-              <span>Last updated May 6, 2025, from my home in Lübeck, Germany.</span>
+              <span>Last updated May 13, 2025, from my home in Lübeck, Germany.</span>
             </MotionDiv>
           </div>
         </div>
