@@ -44,8 +44,8 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <Link href="/" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              Home
+            <Link href="/now" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
+              Now
             </Link>
           </MotionDiv>
           <MotionDiv
@@ -53,8 +53,8 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Link href="/now" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
-              Now
+            <Link href="/bio" className="text-foreground/80 hover:text-foreground transition-colors font-medium">
+              Bio
             </Link>
           </MotionDiv>
           <MotionDiv
@@ -115,6 +115,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 Now
+              </Link>
+              <Link
+                href="/bio"
+                className="py-2 text-foreground/80 hover:text-foreground transition-colors font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Bio
               </Link>
               <Link
                 href="/hire-me"
