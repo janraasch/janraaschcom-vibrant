@@ -103,13 +103,6 @@ export default function Navbar() {
           >
             <div className="container py-4 flex flex-col gap-4">
               <Link
-                href="/"
-                className="py-2 text-foreground/80 hover:text-foreground transition-colors font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
                 href="/now"
                 className="py-2 text-foreground/80 hover:text-foreground transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
@@ -131,7 +124,7 @@ export default function Navbar() {
                 Hire Me
               </Link>
               <Button asChild className="gradient-bg w-full">
-                <Link href="mailto:jan@janraasch.com" onClick={() => setIsOpen(false)}>
+                <Link href="#contact" onClick={() => setIsOpen(false)}>
                   Get in Touch
                 </Link>
               </Button>
