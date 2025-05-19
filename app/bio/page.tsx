@@ -30,7 +30,7 @@ export default function BioPage() {
               className="flex items-center justify-center gap-2 mt-4 text-muted-foreground"
             >
               <StickerIcon className="h-4 w-4 hidden sm:inline" />
-              <span>Written in 3rd person, because that's how bios work.<span className="sm:hidden"> :-)</span></span>
+              <span>Written in 3rd person, because that's how bios work.<span className="sm:hidden"> I don't make the rules 😊</span></span>
             </MotionDiv>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function BioPage() {
                 viewport={{ once: true }}
               >
                 <p className="text-lg text-foreground leading-relaxed font-light font-sans">
-                  With a strong foundation in Ruby on Rails (10+ years), React, TypeScript, and GraphQL, Jan has recently focused on Elixir & Phoenix LiveView for cutting-edge full-stack development. His mathematical background enables rapid adaptation to new technologies and efficient problem-solving, making him a strong advocate for functional programming principles.
+                  With a strong foundation in Ruby on Rails (10+ years), React, TypeScript, Next.js, and GraphQL, Jan has recently focused on Elixir & Phoenix LiveView for cutting-edge full-stack development. His mathematical background enables rapid adaptation to new technologies and efficient problem-solving. This analytical foundation informs his strong appreciation for functional programming principles.
                 </p>
               </MotionDiv>
 
