@@ -30,7 +30,7 @@ export default function BioPage() {
               className="flex items-center justify-center gap-2 mt-4 text-muted-foreground"
             >
               <StickerIcon className="h-4 w-4 hidden sm:inline" />
-              <span>Written in 3rd person, because that's how bios work.</span>
+              <span>Written in 3rd person, because that's how bios work.<span className="sm:hidden"> :-)</span></span>
             </MotionDiv>
           </div>
         </div>
