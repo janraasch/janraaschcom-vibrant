@@ -49,24 +49,20 @@ export default function NowPage() {
               className="mb-12 p-6 border rounded-lg bg-card"
             >
               <div className="text-primary mb-4">
-                <Link href="https://www.elixirconf.eu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Link href="https://www.google.com/maps/place/Lübeck" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  <span className="font-medium">ElixirConf EU, Virtual</span>
+                  <span className="font-medium">Lübeck, Germany</span>
                 </Link>
               </div>
-              <h2 className="text-2xl font-bold mb-4">Attending ElixirConf EU</h2>
+              <h2 className="text-2xl font-bold mb-4">Birthday Month 🎉</h2>
               <p className="text-muted-foreground mb-4">
-                Find me at{" "}
-                <Link href="https://www.elixirconf.eu/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  ElixirConf EU
-                </Link>{" "}
-                in the chat! I'm looking forward to learning about the latest developments in the Elixir ecosystem and connecting with fellow Elixir enthusiasts.
+                It's my birthday this month! Celebrating another year and enjoying the good birthday vibes.
               </p>
               <p className="text-muted-foreground mb-4">
-                If you're also attending, I'd love to connect and chat about Elixir, Functional Programming, Types, AI, and potential collaborations.
+                If you'd like to send birthday wishes or just want to connect, <Link href="#contact" className="text-primary hover:underline">feel free to reach out</Link>!
               </p>
               <div className="animate-bounce-slow inline-block">
-                <span className="text-xl">👋</span>
+                <span className="text-xl">🎂</span>
               </div>
             </MotionDiv>
 
