@@ -31,7 +31,7 @@ export default function NowPage() {
               className="flex items-center justify-center gap-2 mt-4 text-muted-foreground"
             >
               <Calendar className="h-4 w-4 hidden sm:inline" />
-              <span>Last updated May 13, 2025, from my home in Lübeck, Germany.</span>
+              <span>Last updated June 3, 2025, from my home in Lübeck, Germany.</span>
             </MotionDiv>
           </div>
         </div>
@@ -148,6 +148,51 @@ export default function NowPage() {
                   <Link href="https://www.timsenesiyoga.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Tim Senesi</Link>,{" "}
                   or <Link href="https://saturnomovement.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Gabo Saturno</Link>.
                 </p>
+              </MotionDiv>
+
+              {/* Gaming Section */}
+              <MotionDiv
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-2xl font-bold tracking-tight font-heading mb-4">Gaming</h2>
+                <p className="text-muted-foreground text-lg mb-2">
+                Just finished <Link 
+                  href="https://www.ea.com/games/split-fiction/split-fiction" 
+                  target="_blank" rel="noopener noreferrer" 
+                  className="text-primary hover:underline"
+                >
+                Split Fiction
+                </Link> with my fiancée - what an absolute blast! Gameplay-wise, it's a little bit harder than <Link 
+                  href="https://www.ea.com/games/it-takes-two/it-takes-two" 
+                  target="_blank" rel="noopener noreferrer" 
+                  className="text-primary hover:underline"
+                >It Takes Two
+                </Link> - developed by the same team - but that makes it even more rewarding.
+                </p>
+                <div className="text-muted-foreground text-lg transition-all group inline-block">
+                  Plus, I'm very excited about the{' '}
+                  <Link 
+                    href="https://www.nintendo.com/us/gaming-systems/switch-2/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-primary hover:underline"
+                  >
+                    Switch 2
+                  </Link>{' '}
+                  launch & a new <Link 
+                    href="https://www.nintendo.com/us/gaming-systems/switch-2/featured-games/mario-kart-world/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-primary hover:underline"
+                  >
+                    Mario Kart
+                  </Link> game {' '}
+                  <span className="inline-block group-hover:hidden">🏎️ 💣 🏎️ 🏎️.</span>
+                  <span className="hidden group-hover:inline-block">🏎️ 💥 🏎️ ... 🏎️.</span>
+                </div>
               </MotionDiv>
             </div>
           </div>
