@@ -90,7 +90,7 @@ export default function CoreCompetenciesSection() {
               description="Completed AI Alignment course by BlueDot Impact and was awarded Best Interactive Deliverable for final project"
               icon={Sparkles}
               delay={4}
-              link="https://huggingface.co/janraasch"
+              link="https://bluedot.org/projects/activate-love-steering-ai-text-generation"
             />
             <CompetencyCard
               title="No/Low-Code & Rapid Prototyping"
