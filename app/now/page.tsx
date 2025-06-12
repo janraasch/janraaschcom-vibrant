@@ -31,7 +31,7 @@ export default function NowPage() {
               className="flex items-center justify-center gap-2 mt-4 text-muted-foreground"
             >
               <Calendar className="h-4 w-4 hidden sm:inline" />
-              <span>Last updated June 3, 2025, from my home in Lübeck, Germany.</span>
+              <span>Last updated June 12, 2025, from my home in Lübeck, Germany.</span>
             </MotionDiv>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function NowPage() {
               >
                 <h2 className="text-2xl font-bold tracking-tight font-heading mb-4">Freelance Work</h2>
                 <p className="text-muted-foreground text-lg">
-                  Ready to take on new projects starting Q2 2025! Whether you have a specific project in mind or just
+                  Actively looking for new projects for the second half of the year! Whether you have a specific project in mind or just
                   want to explore possibilities, let's chat - you can book a <Link href="https://calendly.com/jan-raasch/office-hours" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">free 30-min call</Link>, check out my previous
                   work on the <Link href="/hire-me" className="text-primary hover:underline">hire me</Link> page or <Link href="mailto:jan@janraasch.com" className="text-primary hover:underline">send me an email</Link> to get in touch.
                 </p>
