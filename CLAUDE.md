@@ -56,5 +56,3 @@ The global layout includes:
 - Tailwind with custom color palette defined in config
 - Component styling follows shadcn/ui patterns
 - Responsive design with mobile-first approach
-
-Note: There's an untracked `mckays-app-template/` directory in the repository that appears to be a separate template project and should generally be ignored when working on the main site.
