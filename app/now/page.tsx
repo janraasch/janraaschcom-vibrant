@@ -93,7 +93,7 @@ export default function NowPage() {
                 <p className="text-muted-foreground text-lg mb-2">
                   A simple, content-focused social platform where you can share thoughts and connect with friends. In web arithmetic it is the sum of <Link href="http://blog.friendfeed.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FriendFeed</Link>, 
                   {" "}<Link href="https://bearblog.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Bear Blog</Link>
-                  {" "}& <Link href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">v0</Link>.
+                  {" "}& <Link href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">v0</Link>. Check out the <Link href="https://github.com/janraasch/v0-bearfeed" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">source code</Link> on GitHub.
                 </p>
                 <p className="text-muted-foreground text-lg mb-2">
                   I initially considered building this with <Link href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Rails</Link>. However, I wanted the project to be something anyone could easily run, edit, and extend, so I chose <Link href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">v0</Link> instead. I'm excited to see what new possibilities the increasing accessibility of web development will bring.
