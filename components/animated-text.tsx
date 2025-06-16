@@ -1,12 +1,15 @@
 "use client"
 
 import { MotionDiv, MotionSpan } from "@/components/use-client-motion"
+import type { AnimationGeneratorType } from "framer-motion"
 
 interface AnimatedTextProps {
   text: string
   className?: string
   once?: boolean
 }
+
+const spring: AnimationGeneratorType = "spring"
 
 export default function AnimatedText({ text, className = "", once = false }: AnimatedTextProps) {
   const words = text.split(" ")
@@ -24,7 +27,7 @@ export default function AnimatedText({ text, className = "", once = false }: Ani
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: spring,
         damping: 12,
         stiffness: 100,
       },
@@ -33,7 +36,7 @@ export default function AnimatedText({ text, className = "", once = false }: Ani
       opacity: 0,
       y: 20,
       transition: {
-        type: "spring",
+        type: spring,
         damping: 12,
         stiffness: 100,
       },
